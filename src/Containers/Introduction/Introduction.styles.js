@@ -13,6 +13,10 @@ export default theme => ({
     },
     '& .middle': {
       alignSelf: 'center',
+      '& img': {
+        width: 100,
+        marginBottom: 20,
+      },
     },
     '& .bottom': {
       alignSelf: 'flex-start',

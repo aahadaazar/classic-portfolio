@@ -26,7 +26,7 @@ const Home = ({ classes, changePageState }) => {
         </div>
         <div className='middle'>
           <p className='first'>
-            {'There is no test like production'}
+            {`"There is no test like production"`}
           </p>
           <p className='second'>
             {'let me turn your'}
