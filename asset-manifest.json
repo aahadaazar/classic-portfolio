@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/classic-portfolio/static/css/main.5f361e03.chunk.css",
-    "main.js": "/classic-portfolio/static/js/main.13c5daf9.chunk.js",
-    "main.js.map": "/classic-portfolio/static/js/main.13c5daf9.chunk.js.map",
+    "main.css": "/classic-portfolio/static/css/main.7839a0f3.chunk.css",
+    "main.js": "/classic-portfolio/static/js/main.fabcebf9.chunk.js",
+    "main.js.map": "/classic-portfolio/static/js/main.fabcebf9.chunk.js.map",
     "runtime-main.js": "/classic-portfolio/static/js/runtime-main.64ff789c.js",
     "runtime-main.js.map": "/classic-portfolio/static/js/runtime-main.64ff789c.js.map",
-    "static/js/2.ded79a07.chunk.js": "/classic-portfolio/static/js/2.ded79a07.chunk.js",
-    "static/js/2.ded79a07.chunk.js.map": "/classic-portfolio/static/js/2.ded79a07.chunk.js.map",
+    "static/js/2.36b711a7.chunk.js": "/classic-portfolio/static/js/2.36b711a7.chunk.js",
+    "static/js/2.36b711a7.chunk.js.map": "/classic-portfolio/static/js/2.36b711a7.chunk.js.map",
     "index.html": "/classic-portfolio/index.html",
-    "precache-manifest.8b8c87cd701afcd10042d2f78e9e5bb0.js": "/classic-portfolio/precache-manifest.8b8c87cd701afcd10042d2f78e9e5bb0.js",
+    "precache-manifest.46c68c780d471b74607ec6ed580c385f.js": "/classic-portfolio/precache-manifest.46c68c780d471b74607ec6ed580c385f.js",
     "service-worker.js": "/classic-portfolio/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/classic-portfolio/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.ded79a07.chunk.js.LICENSE.txt": "/classic-portfolio/static/js/2.ded79a07.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/classic-portfolio/static/media/logo.5d5d9eef.svg"
+    "static/css/main.7839a0f3.chunk.css.map": "/classic-portfolio/static/css/main.7839a0f3.chunk.css.map",
+    "static/js/2.36b711a7.chunk.js.LICENSE.txt": "/classic-portfolio/static/js/2.36b711a7.chunk.js.LICENSE.txt",
+    "static/media/home-background.png": "/classic-portfolio/static/media/home-background.88b5562b.png",
+    "static/media/underconstruction.png": "/classic-portfolio/static/media/underconstruction.b8dcb7ed.png"
   },
   "entrypoints": [
     "static/js/runtime-main.64ff789c.js",
-    "static/js/2.ded79a07.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.13c5daf9.chunk.js"
+    "static/js/2.36b711a7.chunk.js",
+    "static/css/main.7839a0f3.chunk.css",
+    "static/js/main.fabcebf9.chunk.js"
   ]
 }
