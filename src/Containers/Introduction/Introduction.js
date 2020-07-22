@@ -67,7 +67,7 @@ const Introduction = ({ classes, changePageState }) => {
               <a target='_blank' href='https://www.instagram.com/abdulaahadaazar/'>
                 <img alt='' rel="noopener noreferrer" src={instagram} />
               </a>
-              <a target='_blank' href='kedin.com/in/aahad-aazar-b83b77197/'>
+              <a target='_blank' href='https://www.linkedin.com/in/aahad-aazar-b83b77197/'>
                 <img alt='' rel="noopener noreferrer" src={linkedin} />
               </a>
               <a target='_blank' href='https://github.com/aahadaazar'>
