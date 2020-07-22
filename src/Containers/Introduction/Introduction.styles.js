@@ -13,13 +13,62 @@ export default theme => ({
     },
     '& .middle': {
       alignSelf: 'center',
-      '& img': {
-        width: 100,
-        marginBottom: 20,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      '& .picture-div': {
+        marginRight: 10,
+        '& .avatar': {
+          width: 150,
+          height: 150,
+        },
+      },
+      '& .introduction': {
+        fontSize: 22,
+        maxWidth: 430,
+        fontWeight: 300,
+        padding: 30,
+        border: '1px solid white',
+        borderRadius: 5,
+        borderStyle: 'dotted',
+      },
+      '@media(max-width:550px)': {
+        flexDirection: 'column',
+        '& .picture-div': {
+          marginRight: 0,
+          marginBottom: 10,
+          '& .avatar': {
+            width: 150,
+            height: 150,
+          },
+        },
+        '& .introduction': {
+          fontSize: 20,
+          fontWeight: 300,
+          maxWidth: 400,
+        },
       },
     },
     '& .bottom': {
-      alignSelf: 'flex-start',
+      width: '100%',
+      justifyContent: 'space-between',
+      alignItems: 'flex-end',
+      display: 'flex',
+      '& .contact': {
+        margin: '0 auto',
+        background: 'white',
+        padding: '5px 7px',
+        borderRadius: 10,
+        display: 'inline-flex',
+        '& img': {
+          width: 16,
+          margin: '0 10px',
+          cursor: 'pointer',
+        },
+        '& a': {
+          display: 'inherit',
+        }
+      },
       '& .circularButton': {
         cursor: 'pointer',
         border: '1px solid white',
