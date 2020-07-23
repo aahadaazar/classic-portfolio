@@ -44,17 +44,17 @@ const Home = ({ classes, changePageState }) => {
         </div>
         <div className='bottom'>
           <div className='contact'>
-            <a target='_blank' href='https://www.facebook.com/abdulaahadaazar'>
-              <img alt='' rel="noopener noreferrer" src={facebook} />
+            <a rel="noopener noreferrer" target='_blank' href='https://www.facebook.com/abdulaahadaazar'>
+              <img alt='' src={facebook} />
             </a>
-            <a target='_blank' href='https://www.instagram.com/abdulaahadaazar/'>
-              <img alt='' rel="noopener noreferrer" src={instagram} />
+            <a rel="noopener noreferrer" target='_blank' href='https://www.instagram.com/abdulaahadaazar/'>
+              <img alt='' src={instagram} />
             </a>
-            <a target='_blank' href='kedin.com/in/aahad-aazar-b83b77197/'>
-              <img alt='' rel="noopener noreferrer" src={linkedin} />
+            <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/aahad-aazar-b83b77197'>
+              <img alt='' src={linkedin} />
             </a>
-            <a target='_blank' href='https://github.com/aahadaazar'>
-              <img alt='' rel="noopener noreferrer" src={github} />
+            <a rel="noopener noreferrer" target='_blank' href='https://github.com/aahadaazar'>
+              <img alt='' src={github} />
             </a>
           </div>
           <div
