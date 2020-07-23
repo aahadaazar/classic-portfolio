@@ -28,7 +28,8 @@ const Introduction = ({ classes, changePageState }) => {
 
   const insertEmoji = () => {
     const tempCounter = [...emojiCounter];
-    tempCounter.push('a');
+    // tempCounter.push('a');
+    tempCounter.push({ style: `translate(${Math.floor(Math.random() * 100) + 1}vw , ${Math.floor(Math.random() * 100) + 1}vh )`, emoji: emojiArray[Math.floor(Math.random() * 10)] });
     setEmojiCounter(tempCounter);
   }
 
@@ -37,16 +38,19 @@ const Introduction = ({ classes, changePageState }) => {
       <Slide right>
         <div
           className={classes.introductionContainer} >
-          {emojiCounter.map(o => {
+          {emojiCounter.map((o, index) => {
             return (
               <span
+                key={`emoji-${index}`}
                 className='randomEmoji'
                 style={{
                   position: 'absolute',
-                  transform: `translate(${Math.floor(Math.random() * 100) + 1}vw , ${Math.floor(Math.random() * 100) + 1}vh )`,
+                  // transform: `translate(${Math.floor(Math.random() * 100) + 1}vw , ${Math.floor(Math.random() * 100) + 1}vh )`
+                  transform: o.style,
                 }}
               >
-                {emojiArray[Math.floor(Math.random() * 10)]}
+                {/* {emojiArray[Math.floor(Math.random() * 10)]} */}
+                {o.emoji}
               </span>
             )
           })}
