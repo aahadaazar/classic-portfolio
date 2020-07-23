@@ -38,6 +38,7 @@ const Main = ({ classes }) => {
       container>
       <Grid
         item
+        className='gridItem'
         xs={12}>
         {pageToRender}
       </Grid>

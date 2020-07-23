@@ -11,9 +11,11 @@ import instagram from '../../assets/instagram.svg'
 import linkedin from '../../assets/linkedin.svg'
 import github from '../../assets/github.svg'
 
+let emojiArray = ['😀', '😃', '😄', '😁', '😆', '😅', '😂', '🤣', '🥳', '😏', '😒', '😞'];
 const Introduction = ({ classes, changePageState }) => {
   const [pictureActive, setPictureActive] = useState(false);
   const [textActive, setTextActive] = useState(false);
+  const [emojiCounter, setEmojiCounter] = useState([]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,11 +25,31 @@ const Introduction = ({ classes, changePageState }) => {
       setTextActive(true)
     }, 900);
   }, []);
+
+  const insertEmoji = () => {
+    const tempCounter = [...emojiCounter];
+    tempCounter.push('a');
+    setEmojiCounter(tempCounter);
+  }
+
   return (
     <>
       <Slide right>
         <div
           className={classes.introductionContainer} >
+          {emojiCounter.map(o => {
+            return (
+              <span
+                className='randomEmoji'
+                style={{
+                  position: 'absolute',
+                  transform: `translate(${Math.floor(Math.random() * 100) + 1}vw , ${Math.floor(Math.random() * 100) + 1}vh )`,
+                }}
+              >
+                {emojiArray[Math.floor(Math.random() * 10)]}
+              </span>
+            )
+          })}
           <div className='top'>
             <p>
               {'Introduction'}
@@ -42,10 +64,14 @@ const Introduction = ({ classes, changePageState }) => {
               </div>
             </Fade>
             <Fade when={textActive}>
-              <div className='introduction'>
+              <div
+                onClick={() => {
+                  insertEmoji();
+                }}
+                className='introduction'>
                 <p>
                   <i>
-                    {'Bienvenue! Being a Front-End Engineer for 3 years now and still have alot to explore! Based in Karachi->Pakistan, I bring collaboration, unique ideas and charm to the table.'}
+                    {'Bienvenue! Front-End Engineer for 3 years now and still have alot to explore! Based in Karachi, Pakistan, I bring collaboration, unique ideas and charm to the table.'}
                     <br />
                     {'I love bbqs, beaches and food. Always up for a talk '}
                   </i>
