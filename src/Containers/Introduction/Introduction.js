@@ -45,7 +45,9 @@ const Introduction = ({ classes, changePageState }) => {
               <div className='introduction'>
                 <p>
                   <i>
-                    {'Bienvenue! Being a Front-End Engineer for 3 years now, and I feel I have alot to explore! Based in Karachi, Pakistan and being a foodie, I bring collaboration, unique ideas and charm to the table. Always up for a talk '}
+                    {'Bienvenue! Being a Front-End Engineer for 3 years now and still have alot to explore! Based in Karachi->Pakistan, I bring collaboration, unique ideas and charm to the table.'}
+                    <br />
+                    {'I love bbqs, beaches and food. Always up for a talk '}
                   </i>
                   {'😃'}
                 </p>
@@ -67,7 +69,7 @@ const Introduction = ({ classes, changePageState }) => {
               <a target='_blank' href='https://www.instagram.com/abdulaahadaazar/'>
                 <img alt='' rel="noopener noreferrer" src={instagram} />
               </a>
-              <a target='_blank' href='https://www.linkedin.com/in/aahad-aazar-b83b77197/'>
+              <a target='_blank' href='https://www.linkedin.com/in/aahad-aazar-b83b77197'>
                 <img alt='' rel="noopener noreferrer" src={linkedin} />
               </a>
               <a target='_blank' href='https://github.com/aahadaazar'>
