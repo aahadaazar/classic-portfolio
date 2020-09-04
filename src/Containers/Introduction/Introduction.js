@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import stylesheet from './Introduction.styles';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
-import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 import Avatar from '@material-ui/core/Avatar';
+import ArrowRight from '@material-ui/icons/ArrowRightAlt';
 import profilePic from '../../assets/profile.jpg'
 import facebook from '../../assets/facebook.svg'
 import instagram from '../../assets/instagram.svg'
@@ -28,16 +28,15 @@ const Introduction = ({ classes, changePageState }) => {
 
   const insertEmoji = () => {
     const tempCounter = [...emojiCounter];
-    // tempCounter.push('a');
     tempCounter.push({ style: `translate(${Math.floor(Math.random() * 100) + 1}vw , ${Math.floor(Math.random() * 100) + 1}vh )`, emoji: emojiArray[Math.floor(Math.random() * 10)] });
     setEmojiCounter(tempCounter);
   }
 
   return (
     <>
-      <Slide right>
-        <div
-          className={classes.introductionContainer} >
+      <div
+        className={classes.introductionContainer} >
+        <Fade>
           {emojiCounter.map((o, index) => {
             return (
               <span
@@ -45,11 +44,9 @@ const Introduction = ({ classes, changePageState }) => {
                 className='randomEmoji'
                 style={{
                   position: 'absolute',
-                  // transform: `translate(${Math.floor(Math.random() * 100) + 1}vw , ${Math.floor(Math.random() * 100) + 1}vh )`
                   transform: o.style,
                 }}
               >
-                {/* {emojiArray[Math.floor(Math.random() * 10)]} */}
                 {o.emoji}
               </span>
             )
@@ -106,9 +103,16 @@ const Introduction = ({ classes, changePageState }) => {
                 <img alt='' src={github} />
               </a>
             </div>
+            <div
+              onClick={() => {
+                changePageState(3)
+              }}
+              className='circularButton'>
+              <ArrowRight />
+            </div>
           </div>
-        </div >
-      </Slide>
+        </Fade>
+      </div >
     </>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import stylesheet from './Home.styles';
 import ArrowRight from '@material-ui/icons/ArrowRightAlt';
@@ -10,10 +10,6 @@ import github from '../../assets/github.svg'
 
 const Home = ({ classes, changePageState }) => {
   var bg = require('../../assets/home-background.png');
-
-  useEffect(() => {
-    console.log(changePageState);
-  }, [changePageState]);
 
   return (
     <Slide left>

@@ -4,12 +4,13 @@ import Grid from '@material-ui/core/Grid';
 import stylesheet from './Main.styles';
 import Home from '../Home/Home';
 import Introduction from '../Introduction/Introduction';
+import Skills from '../Skills/Skills';
 
 let pageToRender = null;
 
 const Main = ({ classes }) => {
 
-  const [pageState, setPageState] = useState(1);
+  const [pageState, setPageState] = useState(3);
 
   const changePageState = key => {
     setPageState(key);
@@ -23,6 +24,10 @@ const Main = ({ classes }) => {
       break;
     case 2:
       pageToRender = (<Introduction
+        changePageState={changePageState} />);
+      break;
+    case 3:
+      pageToRender = (<Skills
         changePageState={changePageState} />);
       break;
     default:
