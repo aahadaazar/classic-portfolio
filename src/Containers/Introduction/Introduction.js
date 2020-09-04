@@ -36,21 +36,21 @@ const Introduction = ({ classes, changePageState }) => {
     <>
       <div
         className={classes.introductionContainer} >
+        {emojiCounter.map((o, index) => {
+          return (
+            <span
+              key={`emoji-${index}`}
+              className='randomEmoji'
+              style={{
+                position: 'absolute',
+                transform: o.style,
+              }}
+            >
+              {o.emoji}
+            </span>
+          )
+        })}
         <Fade>
-          {emojiCounter.map((o, index) => {
-            return (
-              <span
-                key={`emoji-${index}`}
-                className='randomEmoji'
-                style={{
-                  position: 'absolute',
-                  transform: o.style,
-                }}
-              >
-                {o.emoji}
-              </span>
-            )
-          })}
           <div className='top'>
             <p>
               {'Introduction'}
