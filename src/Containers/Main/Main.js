@@ -10,7 +10,7 @@ let pageToRender = null;
 
 const Main = ({ classes }) => {
 
-  const [pageState, setPageState] = useState(3);
+  const [pageState, setPageState] = useState(1);
 
   const changePageState = key => {
     setPageState(key);
